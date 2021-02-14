@@ -1,0 +1,483 @@
+/*Import Fonts from Google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Gugi&family=Lato:wght@400;700&family=Roboto:wght@300;400;500&family=Sofia&display=swap");
+:root {
+  --light-gray: #2b3032a1;
+  --primary-color: #f0adb9;
+  --border: #2b303218;
+  --text-color: #ff686b;
+  --roboto: "Roboto", sans-serif;
+  --gugi: "Gugi", cursive;
+  --sofia: "sofia", cursive; }
+
+.primary-color {
+  color: var(--primary-color); }
+
+.bg-primary-color {
+  background-color: var(--primary-color) !important; }
+
+.text-color {
+  color: var(--text-color); }
+
+.font-roboto {
+  font-family: var(--roboto); }
+
+.lighblue {
+  color: lightblue; }
+
+header {
+  background-color: var(--primary-color);
+  font-family: var(--roboto);
+  /*Menu de navegacion*/ }
+  header .site-title {
+    font-family: var(--gugi);
+    letter-spacing: 5px; }
+  header .container .dropdown-toggle,
+  header .container .dropdown-item {
+    font-size: 0.7em; }
+  header .headerOne {
+    display: flex;
+    justify-content: center; }
+  header .header-links a {
+    font-size: 0.9em;
+    text-decoration: none;
+    color: white; }
+  header .navbar-nav {
+    padding: 0.8em 0em; }
+    header .navbar-nav .nav-item {
+      padding: 0 1.3em;
+      color: white;
+      transition: all 300ms; }
+      header .navbar-nav .nav-item .nav-link {
+        font-size: 0.9em;
+        color: var(--light-gray); }
+    header .navbar-nav .nav-item:hover {
+      border-bottom: 1px solid var(--primary-color); }
+    header .navbar-nav .basket-icon {
+      margin-right: 6.5rem !important; }
+    header .navbar-nav .nav-item1 {
+      cursor: pointer; }
+
+/*Slider 1*/
+.slider1__img {
+  height: 450px;
+  width: 100%; }
+  .slider1__img img {
+    object-fit: cover; }
+
+.carousel-caption {
+  position: absolute;
+  top: 38%; }
+  .carousel-caption h2 {
+    color: black;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: var(--sofia); }
+    .carousel-caption h2 span {
+      background-color: var(--primary-color);
+      padding: 10px;
+      border: 5px solid white;
+      border-radius: 30px;
+      color: white; }
+
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+/* HTML PIJAMAS HOMBRE*/
+.categories {
+  max-width: 1200px;
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap; }
+  .categories .categories__items1 {
+    flex-grow: 1;
+    min-width: 30.33%;
+    height: 300px;
+    box-sizing: border-box;
+    margin: 5px;
+    background-size: cover;
+    background-position: center; }
+  .categories .items1__img1 {
+    background-image: url(../img/Productos/compresspng/kisspng-bathrobe-t-shirt-pajamas-nightwear-pajamas-png-5addbfdf7beec4.7812225615244820155076-min.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .categories span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+    font-weight: bold; }
+  .categories .items1__img2 {
+    background-image: url(../img/Productos/compresspng/kisspng-bathrobe-patchwork-pajamas-sleeve-patchwork-5b3bee072eab45.9491378115306542151912-min.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .categories .items1__img3 {
+    background-image: url(../img/Productos/compresspng/kisspng-t-shirt-pajamas-carters-boy-clothing-little-monster-baby-home-pajamas-5a9cb166956fa8.4689623915202184706121-min.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .categories .items1__img4 {
+    background-image: url(../img/categorias/sunglasses.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+@media (max-width: 1000px) {
+  .categories__items1 {
+    min-width: 50%; } }
+
+@media (max-width: 720px) {
+  .categories__items1 {
+    min-width: 100%; } }
+
+/*Segunda seccion de Featured Products*/
+.featuredProducts {
+  margin-bottom: 40px; }
+  .featuredProducts .featuredProductos__title--espacio {
+    padding: 5px 0;
+    overflow: hidden;
+    margin-bottom: 10px; }
+  .featuredProducts .featuredProducts__tituloh21 {
+    margin: 15px 0;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-family: var(--sofia); }
+
+@keyframes desplazamiento {
+  from {
+    transform: translateX(800px); }
+  to {
+    transform: translateX(0px); } }
+  .featuredProducts .featuredProducts__productos {
+    margin-top: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 10px; }
+    .featuredProducts .featuredProducts__productos .featuredProductos__filters--borde {
+      background: #ddd;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 20px;
+      box-sizing: border-box;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    .featuredProducts .featuredProducts__productos .featuredProducts__filters .featuredProducts__section--m1 {
+      margin-bottom: 20px; }
+    .featuredProducts .featuredProducts__productos .featuredProducts__filters .featuredProducts__tituloh2 {
+      margin: 0;
+      font-weight: bold;
+      font-family: var(--sofia); }
+    .featuredProducts .featuredProducts__productos .featuredProducts__filters .featuredProducts__section .featuredProducts__check {
+      display: block;
+      margin: 5px 0; }
+    .featuredProducts .featuredProducts__productos .featuredProducts__filters .featuredProducts__section .featuredProducts__section--strong {
+      display: block;
+      margin: 10px 0; }
+    .featuredProducts .featuredProducts__productos .featuredProducts__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 5px; }
+      .featuredProducts .featuredProducts__productos .featuredProducts__grid .featuredProducts__item {
+        margin: 2px;
+        border-radius: 5px;
+        overflow: hidden;
+        text-align: center;
+        box-sizing: border-box;
+        border: 1px solid #dddddd;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        /*un efecto de fondo negro traslucido a las imagenes*/
+        /*un cambio del color del buttom con un aumento en scale*/ }
+        .featuredProducts .featuredProducts__productos .featuredProducts__grid .featuredProducts__item .featuredProducts__image {
+          height: 200px;
+          background-size: cover;
+          background-position: center;
+          cursor: pointer;
+          transition: all 0.3s; }
+        .featuredProducts .featuredProducts__productos .featuredProducts__grid .featuredProducts__item .featuredProducts__image:hover {
+          background-color: rgba(0, 0, 0, 0.507);
+          background-blend-mode: soft-light; }
+        .featuredProducts .featuredProducts__productos .featuredProducts__grid .featuredProducts__item .featuredImage1 {
+          background-image: url(../img/Productos/p1.jpg); }
+        .featuredProducts .featuredProducts__productos .featuredProducts__grid .featuredProducts__item .featuredImage2 {
+          background-image: url(../img/Productos/p2.jpg); }
+        .featuredProducts .featuredProducts__productos .featuredProducts__grid .featuredProducts__item .featuredImage3 {
+          background-image: url(../img/Productos/p3.jpg); }
+        .featuredProducts .featuredProducts__productos .featuredProducts__grid .featuredProducts__item .featuredImage4 {
+          background-image: url(../img/Productos/p4.jpg); }
+        .featuredProducts .featuredProducts__productos .featuredProducts__grid .featuredProducts__item .featuredImage5 {
+          background-image: url(../img/Productos/p5.jpg); }
+        .featuredProducts .featuredProducts__productos .featuredProducts__grid .featuredProducts__item .featuredImage6 {
+          background-image: url(../img/Productos/p6.jpg); }
+        .featuredProducts .featuredProducts__productos .featuredProducts__grid .featuredProducts__item .featuredImage7 {
+          background-image: url(../img/Productos/p7.jpg); }
+        .featuredProducts .featuredProducts__productos .featuredProducts__grid .featuredProducts__item .featuredImage8 {
+          background-image: url(../img/Productos/p8.jpg); }
+        .featuredProducts .featuredProducts__productos .featuredProducts__grid .featuredProducts__item .title {
+          font-size: 20px;
+          font-weight: bold; }
+        .featuredProducts .featuredProducts__productos .featuredProducts__grid .featuredProducts__item .description {
+          color: #666; }
+        .featuredProducts .featuredProducts__productos .featuredProducts__grid .featuredProducts__item .price {
+          font-style: italic; }
+        .featuredProducts .featuredProducts__productos .featuredProducts__grid .featuredProducts__item button {
+          outline: none;
+          background: black;
+          font-family: var(--roboto);
+          color: white;
+          padding: 10px 15px;
+          text-transform: uppercase;
+          cursor: pointer;
+          font-weight: bold;
+          border-radius: 5px;
+          font-size: 16px;
+          margin: 10px 0;
+          cursor: pointer;
+          transition: all 0.3s; }
+        .featuredProducts .featuredProducts__productos .featuredProducts__grid .featuredProducts__item button:hover {
+          background-color: #45ccb8;
+          color: white;
+          transform: scale(1.1, 1.1); }
+
+@media (max-width: 1000px) {
+  .featuredProducts__grid {
+    grid-template-columns: 1fr 1fr !important; } }
+
+@media (max-width: 720px) {
+  .featuredProducts__grid {
+    grid-template-columns: 1fr !important; } }
+
+/*pasamos filtros en una fila*/
+@media (max-width: 600px) {
+  .featuredProducts__productos {
+    grid-template-columns: 1fr !important; }
+    .featuredProducts__productos .featuredProducts__filters {
+      display: flex;
+      flex-wrap: wrap; }
+    .featuredProducts__productos .featuredProducts__section {
+      margin-right: 16px; } }
+
+/*________________________________________________________________________________*/
+/*--------------------------------------------------------------------------------*/
+/*HTML CONTACTANOS*/
+.fondo__animado {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to right, #fa9eaf, #f0adb9);
+  position: relative;
+  overflow: hidden; }
+  .fondo__animado .fondo__contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .fondo__animado .fondo__contenedor .fondo__titulo {
+      margin-bottom: 20px;
+      padding: 20px; }
+    .fondo__animado .fondo__contenedor .fondo__titulo--fuente {
+      font-family: var(--light-gray);
+      color: #fff;
+      font-size: 50px;
+      font-weight: bold; }
+    .fondo__animado .fondo__contenedor .fondo__llamanos {
+      margin-top: 50px;
+      color: #fff;
+      font-size: 20px;
+      text-decoration: none;
+      display: inline-block;
+      background: #1a2849;
+      padding: 20px;
+      border-radius: 15px;
+      transition: all 300ms; }
+    .fondo__animado .fondo__contenedor .fondo__llamanos:hover {
+      background: #ffffff;
+      color: black; }
+    .fondo__animado .fondo__contenedor .fondo__imagen img {
+      padding: 30px;
+      width: 600px;
+      display: block; }
+  .fondo__animado .fondo__burbuja {
+    border-radius: 50%;
+    background: #fff;
+    opacity: .3;
+    position: absolute;
+    bottom: 0;
+    animation: burbujas 3s linear infinite; }
+  .fondo__animado .fondo__burbuja:nth-child(1) {
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s; }
+  .fondo__animado .fondo__burbuja:nth-child(2) {
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 3.5s; }
+  .fondo__animado .fondo__burbuja:nth-child(3) {
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    animation-duration: 1.5s; }
+  .fondo__animado .fondo__burbuja:nth-child(4) {
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    animation-duration: 6s; }
+  .fondo__animado .fondo__burbuja:nth-child(5) {
+    width: 70px;
+    height: 70px;
+    left: 65%;
+    animation-duration: 4s; }
+  .fondo__animado .fondo__burbuja:nth-child(6) {
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s; }
+  .fondo__animado .fondo__burbuja:nth-child(7) {
+    width: 20px;
+    height: 20px;
+    left: 45%;
+    animation-duration: 2s; }
+  .fondo__animado .fondo__burbuja:nth-child(8) {
+    width: 60px;
+    height: 60px;
+    left: 35%;
+    animation-duration: 5s; }
+  .fondo__animado .fondo__burbuja:nth-child(9) {
+    width: 35px;
+    height: 35px;
+    left: 70%;
+    animation-duration: 4.5s; }
+  .fondo__animado .fondo__burbuja:nth-child(10) {
+    width: 40px;
+    height: 40px;
+    left: 85%;
+    animation-duration: 3.5s; }
+  .fondo__animado .fondo__burbuja:nth-child(11) {
+    width: 20px;
+    height: 20px;
+    left: 55%;
+    animation-duration: 3.5s; }
+  .fondo__animado .fondo__burbuja:nth-child(12) {
+    width: 20px;
+    height: 20px;
+    left: 25%;
+    animation-duration: 4.5s; }
+  .fondo__animado .fondo__burbuja:nth-child(13) {
+    width: 35px;
+    height: 35px;
+    left: 20%;
+    animation-duration: 6s; }
+  .fondo__animado .fondo__burbuja:nth-child(14) {
+    width: 20px;
+    height: 20px;
+    left: 30%;
+    animation-duration: 5s; }
+
+@keyframes burbujas {
+  0% {
+    bottom: -150px;
+    opacity: 0; }
+  25% {
+    opacity: .2; }
+  50% {
+    opacity: .4; }
+  75% {
+    opacity: .2; }
+  100% {
+    bottom: 100vh;
+    opacity: 0; } }
+
+/*--------------------------------------------------------------*/
+/*--------------------------------------------------------------*/
+/*--------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*HTML NOSOTROS*/
+/*APLICACIONES DE OPERACIONES CON SASS*/
+/*VARIABLES*/
+/*ejemplo de listas*/
+/*ejemplo de mixin*/
+.contenidoNosotros__historia {
+  text-align: justify; }
+  .contenidoNosotros__historia h1 {
+    font-weight: bold;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 3em;
+    font-family: var(--light-gray); }
+  .contenidoNosotros__historia h2 {
+    font-weight: bold;
+    margin: 20px auto;
+    font-size: 2em;
+    font-family: var(--light-gray); }
+  .contenidoNosotros__historia p {
+    font-family: var(--roboto); }
+  .contenidoNosotros__historia picture img {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    overflow: hidden; }
+  .contenidoNosotros__historia .blockquote1 {
+    margin: 30px auto;
+    width: 95%;
+    border-left: 5px solid #dcdad7;
+    color: #ee9c9c;
+    font-style: italic;
+    font-size: 15px;
+    padding: 20px 10px; }
+  .contenidoNosotros__historia .blockquote2 {
+    margin: 30px auto;
+    width: 95%;
+    border-left: 5px solid #ee9c9c;
+    color: #dde77c;
+    font-style: italic;
+    font-size: 15px;
+    padding: 20px 10px; }
+  .contenidoNosotros__historia .blockquote3 {
+    margin: 30px auto;
+    width: 95%;
+    border-left: 5px solid #dde77c;
+    color: #71eb8f;
+    font-style: italic;
+    font-size: 15px;
+    padding: 20px 10px; }
+  .contenidoNosotros__historia .blockquote4 {
+    margin: 30px auto;
+    width: 95%;
+    border-left: 5px solid #71eb8f;
+    color: #78cdf5;
+    font-style: italic;
+    font-size: 15px;
+    padding: 20px 10px; }
+  .contenidoNosotros__historia .blockquote5 {
+    margin: 30px auto;
+    width: 95%;
+    border-left: 5px solid #78cdf5;
+    color: #eb81dd;
+    font-style: italic;
+    font-size: 15px;
+    padding: 20px 10px; }
+  .contenidoNosotros__historia .blockquote6 {
+    margin: 30px auto;
+    width: 95%;
+    border-left: 5px solid #eb81dd;
+    color: #ee9c9c;
+    font-style: italic;
+    font-size: 15px;
+    padding: 20px 10px; }
+
+/*--------------------------------------------------*/
+/*----------------------------------------------------*/
+/*-----------------------------------------------------*/
